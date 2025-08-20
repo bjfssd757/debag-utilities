@@ -1,4 +1,4 @@
-# debag-utilities
+# debug-utilities
 
 Rust procedural macros for simplified debugging.
 
@@ -12,7 +12,7 @@ Rust procedural macros for simplified debugging.
 First, you need to add the library to your project:
 
 ```cargo
-cargo add debag_utilities
+cargo add debug_utilities
 ```
 
 Then, you need to add a dependency to highlight debug messages in the terminal:
@@ -26,7 +26,7 @@ cargo add colored
 Adds a debug output to the beginning and end of the function, showing the function entry (along with the input parameters) and exit (with the returned result, if any).
 
 ```rust
-use debag_utilities::*;
+use debug_utilities::*;
 
 #[trace]
 fn get_name(id: i32) -> String {
@@ -63,7 +63,7 @@ Some Name
 Displays the value of the specified variable in the debug message.
 
 ```rust
-use debag_utilities::*;
+use debug_utilities::*;
 
 fn main() {
     let a = 42;

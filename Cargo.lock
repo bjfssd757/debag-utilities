@@ -3,7 +3,7 @@
 version = 4
 
 [[package]]
-name = "debag_utilities"
+name = "debug_utilities"
 version = "0.1.0"
 dependencies = [
  "proc-macro2",
